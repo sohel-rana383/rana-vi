@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICT Class</title>
+
+<!-- Stylesheet -->
+<style type="text/css">
+body{
+margin:5px;
+margin-left:0px;
+margin-top:0px;
+margin-right:0px;
+padding:0px;
+background-color: green;
+}
+.text{
+height:50px;
+width:140px;
+font-size:20px;
+background-color:black;
+color: white;
+}
+.btn{
+height:40px;
+width:100px;
+background-color: blue;
+color:white;
+margin-left:5px;
+border-radius:7px;
+}
+placeholder{
+color:red;
+}
+.cont{
+height:50px;
+width:150px;
+}
+.box{
+text-align:center;
+background-color: gold;
+padding: 10px 5px;
+border: 1px dashed #ddd;
+margin-bottom: 15px;
+
+}
+</style>
+<script>
+function e(){
+var x = document.getElementById("a"). value;
+var y = document.getElementById("b"). value;
+
+var z = (x*y)/435.6;
+alert(z);
+};
+function h(){
+var h = document.getElementById("f"). value;
+var i = document.getElementById("g"). value;
+
+var j = (h*435.6)/i;
+alert(j);
+};
+
+</script>
+</head>
+<body>
+
+<div class="box">
+<p> জমির শতাংশ নির্নয় :</p>
+  <div class="display">
+ <table class="tb" border="1px dashed #ddd">
+       <tr><th>দৈর্ঘ্য(ফুট)</th><th>প্রস্থ(ফুট)</th></tr>
+      <tr>
+           <td><input type="text" class="text" placeholder="Press num" id="a" name="text" ></td>
+           <td><input type="text" class="text" placeholder="Press num" id="b" name="text" ></td>
+      </tr>
+  </table>
+   </div>
+  </div>
+ 
+ <input type="button"class="btn" value="=" onclick="e()"><br><br>
+<div class="box">
+<p>জমির দৈর্ঘ্য অথবা প্রস্থ নির্নয়:</p>
+  <div class="display">
+ <table class="tb" border=".5px " >
+       <tr><th>শতাংশ</th><th>দৈর্ঘ্য অথবা প্রস্থ</th></tr>
+      <tr>
+           <td><input type="text" class="text" placeholder="Press num" id="f" name="text" ></td>
+           <td><input type="text" class="text" placeholder="Press num" id="g" name="text" ></td>
+      </tr>
+  </table>
+   </div>
+  </div>
+  
+ <input type="button"class="btn" value="=" onclick="h()">
+
+</body>
+</html>
